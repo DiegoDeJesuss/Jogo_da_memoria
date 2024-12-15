@@ -88,7 +88,7 @@ h2{
     position: absolute;
     inset: 0;
     background: #404040;
-    /* opacity: 0.85; */
+    /* opacity: 100; */
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
@@ -103,3 +103,40 @@ h2{
     transform: rotateY(180deg);
 }
 
+
+img{
+    width: 80px;
+}
+
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ebebeb;
+    margin-bottom: 10px;
+  }
+
+
+  #alert-container{
+    font-size: large;
+  }
+  
+
+
+  @media (max-width: 575.98px) {
+    h2{
+        text-align: center;
+    }
+    .item{
+        position: relative;
+        width: 70px;
+        height: 70px;
+       
+    }
+    div{
+        margin-left: 18px;
+    }
+    img{
+        width: 70px;
+    }
+  }
