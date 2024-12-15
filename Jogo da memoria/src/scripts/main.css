@@ -53,8 +53,8 @@ h2{
 }
 
 .reset:focus{
-    color: #ec38bc;
-    background-color: #262885;
+    color: #63ff09;
+    background-color: #101013;
 }
 
 .game{
@@ -69,30 +69,31 @@ h2{
 
 }
 
-.item{
+.item {
     position: relative;
     width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-
+    background-color: #fff; /* Cor de fundo */
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
 }
 
-.item::after{
+.item::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: #404040;
-    /* opacity: 100; */
-    transition: 0.25s;
-    transform: rotateY(0deg);
+    background-image: url("../img/bola.png");
+    background-size: cover; /* Ajusta a imagem para caber */
+    background-position: center; /* Centraliza a imagem */
     backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: 0.25s;
 }
+
 
 .item.boxOpen{
     transform: rotateY(0deg);
